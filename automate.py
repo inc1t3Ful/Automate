@@ -20,3 +20,13 @@ with open('testfile.txt', 'rt') as in_file:
     for line in in_file:
         # print line
         print(line)
+
+# 2nd iteration working with lists to read data into variables
+# declare empty list called 'lines'
+lines = []
+with open('testfile.txt', 'rt') as in_file:
+    # for each line in string variable 'line'
+    for line in in_file:
+        # add line to list of lines
+        lines.append(line)
+        print(lines)
