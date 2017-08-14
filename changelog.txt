@@ -1,0 +1,17 @@
+CHANGELOG
+
+++ ADDITIONS
+-- DELETIONS
+** CHANGES
+
+-> edit3 (13 Aug 2017)
+  ++ line 20 added new strip function to remove \n
+  ++ search function implemented for strings
+
+  -- removed 1st iteration code
+
+  ** fixed issue in line 20 spacing which caused print to occur multiple times
+  ** changed last edit date
+  **
+
+  NOTE: The line spacing is different from the one in the example
