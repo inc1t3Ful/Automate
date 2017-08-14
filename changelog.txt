@@ -15,3 +15,11 @@ CHANGELOG
   **
 
   NOTE: The line spacing is different from the one in the example
+
+-> edit4 (13 Aug 2017)
+  ++ enumerate object function added line 69
+  ++ enumerate object search function implemented
+
+  -- 
+
+  ** commented out test code for enumerate

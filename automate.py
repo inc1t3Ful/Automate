@@ -61,4 +61,36 @@ with open('testfile.txt', 'rt') as in_file:
         index += len(searchTerm)
     """
 
-    
+    # enumerate() takes another sequential object (such as a list), and returns an enumerate object.
+    # The enumerate object creates a sequence of tuples from our list.
+    # Each of these tuples comprises two pieces of data: an index number, and the data at that index
+    # for...in, which we've already used, can keep track of multiple variables as it iterates.
+    """
+    print(list(enumerate(lines)))
+    """
+
+    # now have line numbers
+    # for...in iterates over our enumerate object, which is created by iterating over lines
+    # it places those values into the variables linenum and line, respectively
+    """
+    for linenum, line in enumerate(lines):
+        print(linenum, line)
+    """
+
+    # Create enumerate object to track line number and character index for search term
+    searchTerm = "e"
+
+    for linenum, line in enumerate(lines):
+        # cannot set index = 0 outside loop otherwise, it is static
+        index = 0
+        # store line in str variable str
+        str = lines[linenum]
+
+        while index < len(str):
+            index = str.find(searchTerm, index)
+
+            if index == -1:
+                break
+
+            print("line: ", linenum, "index: ", index)
+            index += len(searchTerm)
