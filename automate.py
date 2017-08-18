@@ -5,9 +5,11 @@
   written by: Anthony Lee
               github.com/inc1t3Ful
 
-  Last edit: 13 Aug 2017
+  Last edit: 18 Aug 2017
 
 """
+# import python regular expression module to strengthen search capabilities
+import re
 
 # 3rd iteration working with lists to read data into variables
 # A list object is an iterator, so to print every element of the list, we can iterate over it
@@ -78,6 +80,7 @@ with open('testfile.txt', 'rt') as in_file:
     """
 
     # Create enumerate object to track line number and character index for search term
+    """
     searchTerm = "e"
 
     for linenum, line in enumerate(lines):
@@ -94,3 +97,24 @@ with open('testfile.txt', 'rt') as in_file:
 
             print("line: ", linenum, "index: ", index)
             index += len(searchTerm)
+    """
+
+    # Use imported regular expression module to match/ search term
+
+    # list where results are stored
+    err_occur = []
+    # compile case insensitive regex pattern searching the term "error"
+    pattern = re.compile("error", re.IGNORECASE)
+    try:
+        # open file for reading text
+        with open ('testfile.txt', 'rt') as in_file:
+            # track line numbers
+            for linenum, line in enumerate(in_file):
+                if pattern.search(line) != None:
+                    err_occur.append((linenum, line.rstrip('\n')))
+
+            for linenum, line in err_occur:
+                print("Line ", linenum, ": ", line, sep='')
+
+            except FileNotFoundError:
+                print("Log file not found")

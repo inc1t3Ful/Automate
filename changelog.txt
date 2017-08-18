@@ -20,6 +20,17 @@ CHANGELOG
   ++ enumerate object function added line 69
   ++ enumerate object search function implemented
 
-  -- 
+  --
 
   ** commented out test code for enumerate
+
+-> edit6 (18 Aug 2017)
+  ++ import new module
+  ++ new imported regex function for error searching
+
+  --
+
+  ** updated last edit date
+  ** commented out previous enumerate function change
+
+  NOTE: need to still modify to find correct terms and implement
