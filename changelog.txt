@@ -34,3 +34,11 @@ CHANGELOG
   ** commented out previous enumerate function change
 
   NOTE: need to still modify to find correct terms and implement
+
+-> edit7 (22 Aug 2017)
+  ++ current writing of the err_occur checks
+
+  --
+
+  ** updated last edit date
+  ** commented out regex edit6
