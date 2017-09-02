@@ -100,7 +100,7 @@ with open('testfile.txt', 'rt') as in_file:
     """
 
     # Use imported regular expression module to match/ search term
-
+    """
     # list where results are stored
     err_occur = []
     # compile case insensitive regex pattern searching the term "error"
@@ -118,3 +118,27 @@ with open('testfile.txt', 'rt') as in_file:
 
             except FileNotFoundError:
                 print("Log file not found")
+    """
+
+import re
+
+# 3rd iteration working with lists to read data into variables
+# A list object is an iterator, so to print every element of the list, we can iterate over it
+# declare empty list called 'lines'
+lines = []
+with open('testfile.txt', 'rt') as in_file:
+    # for each line in string variable 'line'
+    for line in in_file:
+        # add line to list of lines, strip \n (newlines)
+        lines.append(line.rstrip('\n'))
+
+    # list where results are stored
+    err_occur = []
+    # compile case insensitive regex patterm searching the terms
+    d_occur = re.compile("\b\w*d\w*\b", re.IGNORECASE)
+    a_occur = re.compile("\b\w*a\w*\b", re.IGNORECASE)
+    c_occur = re.compile("\b\w*c\w*\b", re.IGNORECASE)
+    dash_occur = re.compile("\b\w*---\w*\b", re.IGNORECASE)
+
+    try:
+        
