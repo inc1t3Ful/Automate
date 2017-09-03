@@ -42,3 +42,13 @@ CHANGELOG
 
   ** updated last edit date
   ** commented out regex edit6
+
+-> edit8 (2 Sept 2017)
+  ++ added in the different err_occur scenarios
+  ++ added error check for file input
+
+  --
+
+  ** updated last edit date
+
+  NOTE: need to still modify to change the text rather than save print lines/ save into another list

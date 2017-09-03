@@ -5,7 +5,7 @@
   written by: Anthony Lee
               github.com/inc1t3Ful
 
-  Last edit: 18 Aug 2017
+  Last edit: 1 Sep 2017
 
 """
 # import python regular expression module to strengthen search capabilities
@@ -141,4 +141,22 @@ with open('testfile.txt', 'rt') as in_file:
     dash_occur = re.compile("\b\w*---\w*\b", re.IGNORECASE)
 
     try:
-        
+        # open file for reading text
+        with open ('testfile.txt', 'rt') as in_file:
+            # track line numbers
+            # need to change the err_occur append to replace words with keywords
+            for linenum, line in enumerate(in_file):
+                if d_occur(line) != None:
+                    err_occur.append((linenum, line.rstrip('\n')))
+
+                if a_occur(line) != None:
+                    err_occur.append((linenum, line.rstrip('\n')))
+
+                if c_occur(line) != None:
+                    err_occur.append((linenum, line.rstrip('\n')))
+
+                if dash_occur(line) != None:
+                    err_occur.append((linenum, line.rstrip('\n')))
+
+                except FileNotFoundError:
+                    print("Error: File not found")
