@@ -52,3 +52,11 @@ CHANGELOG
   ** updated last edit date
 
   NOTE: need to still modify to change the text rather than save print lines/ save into another list
+
+-> edit9 (16 Sept 2017)
+  ++ added re.sub method as possibility to replace words instead of using str.replace
+  ++ added comments to goals
+
+  --
+
+  ** updated last edit date

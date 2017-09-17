@@ -5,7 +5,7 @@
   written by: Anthony Lee
               github.com/inc1t3Ful
 
-  Last edit: 1 Sep 2017
+  Last edit: 16 Sep 2017
 
 """
 # import python regular expression module to strengthen search capabilities
@@ -158,5 +158,16 @@ with open('testfile.txt', 'rt') as in_file:
                 if dash_occur(line) != None:
                     err_occur.append((linenum, line.rstrip('\n')))
 
+            # still need to change err_occur to the proper parameter
+            for linenum, line in err_occur:
+                re.sub("\w*d\w*", "delete", #string name)
+
+
                 except FileNotFoundError:
                     print("Error: File not found")
+
+            # self note: what we want to do is
+            # 1. open file
+            # 2. convert text file into an entire string(?) is there more efficient way?
+            # 3. find all /and/or replace all required codewords with correct terms
+            # 4. print out new text file/ same one with changes
