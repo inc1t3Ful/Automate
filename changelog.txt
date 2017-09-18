@@ -56,6 +56,7 @@ CHANGELOG
 -> edit9 (16 Sept 2017)
   ++ added re.sub method as possibility to replace words instead of using str.replace
   ++ added comments to goals
+  ++ added testfile2 for script testing purposes
 
   --
 
