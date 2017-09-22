@@ -22,7 +22,7 @@ print(c)
 print('')
 
 # test regex sub for '---' keywords
-d = re.sub(r"\w\w\w---\w\w\w", "add", str(a))
+d = re.sub(r"---", "add", str(a))
 
 print("This is re.sub method for ---")
 print(d)
