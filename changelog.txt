@@ -67,8 +67,12 @@ CHANGELOG
   ** currently sub '---' not working correctly
 
 -> edit10 (22 Sept 2017)
-  ++
+  ++ added read textfile input for testscript.py
+  ++ added print test
+  ++ added substitution tests
 
-  --
+  -- commented out previous tests
+  -- remove rstrip \n to test better output
 
   ** changed README.md
+  ** fixed to correct testfile input
