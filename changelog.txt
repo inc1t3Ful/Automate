@@ -76,3 +76,11 @@ CHANGELOG
 
   ** changed README.md
   ** fixed to correct testfile input
+
+-> edit11 (23 Sept 2017)
+  ++
+
+  --
+
+  ** changed edit date
+  ** updated new branch
