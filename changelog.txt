@@ -65,3 +65,10 @@ CHANGELOG
   ** updated testscript.py to test correctly
   ** added test for findall, sub 'a'
   ** currently sub '---' not working correctly
+
+-> edit10 (22 Sept 2017)
+  ++
+
+  --
+
+  ** changed README.md

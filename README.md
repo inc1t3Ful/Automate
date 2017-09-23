@@ -1,2 +1,2 @@
 # Automate
-Automation script for output data reading from Cisco automated tests
+Automation script for output data reading from automated tests
