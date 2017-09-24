@@ -44,7 +44,7 @@ with open('testfile2.txt', 'rtw') as in_file:
     c_occur = re.sub(r"\w\w\wc\w\w\w", "remove", str(a_occur))
     minus_occur = re.sub(r"---", "add", str(c_occur))
 
-# test output for minus_occur (22 Sep 2017 edit11)
+# test output for minus_occur (22 Sep 2017 edit12)
 test = open("test2.txt", "w")
 test.write(minus_occur)
 test.close()
