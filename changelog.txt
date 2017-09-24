@@ -78,9 +78,12 @@ CHANGELOG
   ** fixed to correct testfile input
 
 -> edit11 (23 Sept 2017)
-  ++
+  ++ formatting changes (does tab work)(yes)
+  ++ testscript2.py added to test read/write output
+  ++ test.txt added from output of above
 
   --
 
   ** changed edit date
   ** updated new branch
+  ** changed print statement to fileoutput
