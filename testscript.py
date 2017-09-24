@@ -30,21 +30,28 @@ import re
 # print('')
 
 lines = []
-# read testfile2.txt
-with open('testfile2.txt', 'rt') as in_file:
+test = open('testfile2.txt', 'rw')
+# # read testfile2.txt
+# with open('testfile2.txt', 'rtw') as in_file:
     # for each line in string variable 'line'
-    for line in in_file:
-        # add line to list of lines, strip \n (newlines)
-        # removing rstrip for \n does not work for better formatting [22 Sep 2017 edit10]
-        lines.append(line.rstrip('\n'))
+for line in test:
+    # add line to list of lines, strip \n (newlines)
+    # removing rstrip for \n does not work for better formatting [22 Sep 2017 edit10]
+    lines.append(line.rstrip('\n'))
 
 d_occur = re.sub(r"\w\w\wd\w\w\w", "delete", str(lines))
 a_occur = re.sub(r"\w\w\wa\w\w\w", "add", str(d_occur))
 c_occur = re.sub(r"\w\w\wc\w\w\w", "remove", str(a_occur))
 minus_occur = re.sub(r"---", "add", str(c_occur))
 
-print(minus_occur)
+
+test.write(minus_occur)
+
+test.close()
     # # print out test file contents
     # for element in lines:
     #
     #     print(element)
+
+# # you don't need close() if using a context manager (aka the with open() etc)
+# fo.close()
