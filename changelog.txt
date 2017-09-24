@@ -87,3 +87,13 @@ CHANGELOG
   ** changed edit date
   ** updated new branch
   ** changed print statement to fileoutput
+
+-> edit12 (23 Sept 2017)
+  ++ added test output code for testscript.py
+  ++ test2.txt output from above
+
+  --
+
+  ** updated edit date on relevant area
+  NOTE: use print statement for testing. write to txt for official
+  To test: last thing to check is for official automate on actual testfile

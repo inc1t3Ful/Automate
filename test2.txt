@@ -1,0 +1,1 @@
+['delete', 'add', 'remove', 'add', 'delete', 'add', 'remove']
