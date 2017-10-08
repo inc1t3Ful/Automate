@@ -97,3 +97,12 @@ CHANGELOG
   ** updated edit date on relevant area
   NOTE: use print statement for testing. write to txt for official
   To test: last thing to check is for official automate on actual testfile
+
+-> edit13 (7 Oct 2017)
+  ++
+
+  --
+
+  **
+
+  NOTE: for efficiency, find out way to utilise list rather than str for storing of data from input file
