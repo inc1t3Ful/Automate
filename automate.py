@@ -15,7 +15,7 @@ import re
 # A list object is an iterator, so to print every element of the list, we can iterate over it
 # declare empty list called 'lines'
 lines = []
-with open('testfile.txt', 'rt') as in_file:
+with open('automate_testinput.txt', 'rt') as in_file:
     # for each line in string variable 'line'
     for line in in_file:
         # add line to list of lines, strip \n (newlines)
