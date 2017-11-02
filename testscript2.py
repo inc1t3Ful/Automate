@@ -1,6 +1,6 @@
 # testreading file
 
-f = open("test.txt","w") #opens file with name of "test.txt"
+f = open("testscript2_output.txt","w") #opens file with name of "test2.txt"
 
 f.write("I am a test file.\n")
 
