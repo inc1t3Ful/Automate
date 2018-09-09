@@ -29,19 +29,25 @@ with open('testscript_input.txt', 'rtw') as in_file:
     c_occur = re.sub(r"\w\w\wc\w\w\w", "remove\n", str(a_occur))
     minus_occur = re.sub(r"---", "add\n", str(c_occur))
 
+# checking if minus_occur object is a string
+# print(isinstance(minus_occur, str))
+
 pattern = re.sub(r'([^\s\w]|_)+', '', minus_occur)
-# print pattern
+# check if pattern object is a string
+# print(isinstance(pattern, str))
+# pattern2 = pattern.rstrip(' ')
+
+# pattern2 = ''.join([line.rstrip() + '\n' for line in pattern.splitline()])
+# string obj has no attribute 'splitline'
+
+print(minus_occur)
+print(" ")
+print(pattern)
+
 # test output for minus_occur (22 Sep 2017 edit12)
 test = open("testscript_output.txt", "w")
 test.write(pattern)
 test.close()
-
-# testjoin = ''.join(filter(str.isalnum, minus_occur))
-# print(testjoin)
-
-# print(''.join(minus_occur))
-# strippedList = pattern.sub('', minus_occur)
-
 
             # self note: what we want to do is
             # 1. open file
