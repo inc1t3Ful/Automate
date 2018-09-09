@@ -5,3 +5,4 @@ changelog.txt
 # Ignore test files
 testscript.py
 testcript2.py
+automate_testinput.txt

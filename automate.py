@@ -29,19 +29,19 @@ with open('testscript_input.txt', 'rtw') as in_file:
     c_occur = re.sub(r"\w\w\wc\w\w\w", "remove\n", str(a_occur))
     minus_occur = re.sub(r"---", "add\n", str(c_occur))
 
+pattern = re.sub(r'([^\s\w]|_)+', '', minus_occur)
+# print pattern
 # test output for minus_occur (22 Sep 2017 edit12)
 test = open("testscript_output.txt", "w")
-test.write(minus_occur)
+test.write(pattern)
 test.close()
 
-print(d_occur)
 # testjoin = ''.join(filter(str.isalnum, minus_occur))
 # print(testjoin)
-print(" ")
+
 # print(''.join(minus_occur))
-pattern = re.sub(r'([^\s\w]|_)+', '', minus_occur)
 # strippedList = pattern.sub('', minus_occur)
-print pattern
+
 
             # self note: what we want to do is
             # 1. open file
