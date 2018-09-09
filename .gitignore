@@ -1,0 +1,7 @@
+# Ignore output file
+testscript_output.txt
+changelog.txt
+
+# Ignore test files
+testscript.py
+testcript2.py
